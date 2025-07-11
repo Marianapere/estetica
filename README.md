@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 💆‍♀️ Lovella Estética
 
-First, run the development server:
+Sitio web profesional desarrollado con Next.js y Tailwind CSS para una clínica estética.  
+Incluye secciones informativas, diseño responsive, animaciones y próximamente login con cuenta de Google.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Tecnologías
+
+- [Next.js 14 (App Router)](https://nextjs.org)
+- [React 18](https://reactjs.org)
+- [Tailwind CSS](https://tailwindcss.com)
+- [TypeScript](https://www.typescriptlang.org)
+- [NextAuth.js](https://next-auth.js.org) (autenticación con Google - en progreso)
+
+---
+
+## 🧩 Estructura del proyecto
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+proyecto\_estetica/
+├── front/                # Aplicación frontend (Next.js)
+│   ├── components/       # Componentes reutilizables
+│   ├── pages/ o app/     # Rutas del sitio (App Router)
+│   ├── public/images/    # Imágenes del proyecto
+│   ├── styles/           # Estilos globales
+│   └── ...
+├── back/ (opcional)      # Backend si aplica
+└── README.md             # Documentación 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+````
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠 Instalación y ejecución local
 
-To learn more about Next.js, take a look at the following resources:
+bash
+all
+npm run devcd front
+npm inst
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Abrí el navegador en [http://localhost:3000](http://localhost:3000)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔐 Configuración de variables de entorno
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Crea un archivo `.env.local` en `front/` y agregá lo siguiente si usás autenticación:
+
+```env
+GOOGLE_CLIENT_ID=tu_client_id
+GOOGLE_CLIENT_SECRET=tu_client_secret
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=una_clave_segura
+```
+
+---
+
+## 📌 Funcionalidades
+
+* ✅ Diseño 100% responsive
+* ✅ Navbar y Footer unificados
+* ✅ Galería de imágenes con animaciones
+* ✅ Estructura modular por componentes
+* 🔒 Login con cuenta de Google (en desarrollo)
+* 📝 Panel de usuario (futuro)
+
+---
+
+## 🔄 Ramas principales
+
+* `main`: Rama de producción
+* `feature/google-auth`: Autenticación con Google
+* `feature/hero-carousel`: Carrusel de imágenes en el Hero
+
+---
+
+## 👩‍💻 Desarrolladora
+
+* **Mariana Pereyra.**
+* Portfolio: *\[tu enlace si tenés]*
+* GitHub: [https://github.com/Marianapere](https://github.com/Marianapere)
+
+---
+
+## 📦 Deploy
+
+Próximamente desplegado en [Vercel](https://vercel.com)
+
+---
