@@ -20,8 +20,8 @@ const Button = ({
     primary:
       "px-8 py-3 text-base w-44 h-12 bg-gray-900 text-white hover:bg-gray-800",
     outline:
-      "px-8 py-3 text-base w-44 h-12 border border-gray-800 text-gray-900 hover:bg-gray-800 hover:text-white",
-    auth: "px-4 py-2 text-sm bg-blue-500 text-white rounded hover:bg-blue-600 transition", // más pequeño
+      "px-8 py-3 text-base w-44 h-12 border border-gray-800 text-gray-600 hover:bg-gray-800 hover:text-white",
+    auth: "px-4 py-2 text-base bg-[rgb(177,240,247)]  text-gray-500 rounded hover:bg-[rgb(177,240,247)]  transition", // más pequeño
   };
 
   return (
