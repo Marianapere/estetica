@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { signIn, useSession } from "next-auth/react";
 import Button from "../Button/Button";
 import UserMenu from "../UserMenu";
@@ -19,36 +21,38 @@ const Navbar = () => {
           <div className="flex items-center gap-4">
             {/* Navegación oculta en mobile */}
             <div className="hidden md:flex gap-6">
-              <button className="px-3 py-2 text-gray-700 hover:text-gray-900">
+              <Link
+                href="/"
+                className="px-3 py-2 text-gray-700 hover:text-gray-900"
+              >
                 Home
-              </button>
-              <button className="px-3 py-2 text-gray-700 hover:text-gray-900">
+              </Link>
+              <Link
+                href="/about"
+                className="px-3 py-2 text-gray-700 hover:text-gray-900"
+              >
                 About
-              </button>
-              <button className="px-3 py-2 text-gray-700 hover:text-gray-900">
+              </Link>
+              <Link
+                href="/news"
+                className="px-3 py-2 text-gray-700 hover:text-gray-900"
+              >
                 News
-              </button>
-              <button className="px-3 py-2 text-gray-700 hover:text-gray-900">
+              </Link>
+              <Link
+                href="/compras"
+                className="px-3 py-2 text-gray-700 hover:text-gray-900"
+              >
                 Shop
-              </button>
-              <button className="px-3 py-2 text-gray-700 hover:text-gray-900">
+              </Link>
+              <Link
+                href="/demos"
+                className="px-3 py-2 text-gray-700 hover:text-gray-900"
+              >
                 Demos
-              </button>
+              </Link>
             </div>
 
-            {/* Botón de login/logout visible en todos los tamaños
-            {session ? (
-              <button
-                onClick={() => signOut()}
-                className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition text-sm"
-              >
-                Cerrar sesión
-              </button>
-            ) : (
-              <Button variant="auth" onClick={() => signIn("google")}>
-                Iniciar sesión
-              </Button>
-            )} */}
             {session ? (
               <div className="flex items-center">
                 <UserIcons />

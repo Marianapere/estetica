@@ -34,29 +34,6 @@ export default function UserMenu() {
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full mt-2 w-48  bg-white border rounded shadow-md z-10">
-          <Link
-            href="/perfil"
-            className="block px-4 py-2 hover:bg-gray-100 text-sm  text-black"
-          >
-            Mi perfil
-          </Link>
-          <Link
-            href="/compras"
-            className="block px-4 py-2 hover:bg-gray-100 text-sm text-black"
-          >
-            Compras
-          </Link>
-          <button
-            onClick={() => signOut({ callbackUrl: "/" })}
-            className="block w-full text-left px-4 py-2 hover:bg-gray-100 text-sm text-red-600"
-          >
-            Cerrar sesión
-          </button>
-        </div>
-      )}
-
-      {open && (
         <div className="absolute right-0 mt-2 w-48 bg-white border rounded shadow-md z-10">
           <Link
             href="/perfil"
@@ -71,7 +48,7 @@ export default function UserMenu() {
             Compras
           </Link>
           <button
-            onClick={() => signOut()}
+            onClick={() => signOut({ callbackUrl: "/" })}
             className="block w-full text-left px-4 py-2 hover:bg-gray-100 text-sm text-red-600"
           >
             Cerrar sesión
